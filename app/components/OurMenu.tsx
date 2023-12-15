@@ -6,7 +6,7 @@ import { MENU } from "@/utils/menu";
 export function OurMenu() {
   return (
     <div className="flex flex-col gap-4 bg-gradient-to-tr from-gray-700 to-black text-white p-4">
-      <h2 className="text-white text-4xl font-3xl">Notre menu</h2>
+      <h2 className="text-white text-4xl font-3xl text-center">Notre menu</h2>
 
       <ul className="flex flex-wrap justify-center gap-4">
         {MENU.map((item) => (

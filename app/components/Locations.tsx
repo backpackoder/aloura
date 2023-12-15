@@ -9,7 +9,7 @@ import { LOCATIONS } from "@/utils/locations";
 export function Locations() {
   return (
     <article className="flex flex-col gap-4 w-full">
-      <h2 className="text-4xl text-white pt-4 ml-4">Nos emplacements</h2>
+      <h2 className="text-white text-4xl text-center pt-4 ml-4">Nos emplacements</h2>
 
       <div className="flex flex-wrap flex-col justify-between text-white text-center shadow-xl md:flex-row">
         {LOCATIONS.map((location) => (
