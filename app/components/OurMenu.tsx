@@ -1,6 +1,7 @@
+import Image from "next/image";
+
 // Utils
 import { MENU } from "@/utils/menu";
-import Image from "next/image";
 
 export function OurMenu() {
   return (
@@ -16,16 +17,24 @@ export function OurMenu() {
   );
 }
 
-function Plate({ item }: { item: any }) {
+function Plate({ item }: { item: (typeof MENU)[0] }) {
   return (
-    <li className="w-[200px] bg-gradient-to-tl from-red-500 to-red-700 rounded-md overflow-hidden">
-      <Image
-        src={item.image}
-        alt={item.name}
-        width={200}
-        height={200}
-        className="aspect-square object-cover w-full"
-      />
+    <li className="group w-[200px] bg-gradient-to-tl from-red-500 to-red-700 rounded-md overflow-hidden">
+      <div className="relative">
+        <Image
+          src={item.image}
+          alt={item.name}
+          width={200}
+          height={200}
+          className="aspect-square object-cover w-full duration-300 group-hover:brightness-50"
+        />
+        <p
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-center
+        opacity-0 w-full h-full text-xs font-semibold bg-[rgba(0,0,0,0.5)] text-center p-2 duration-300 group-hover:opacity-100"
+        >
+          {item.description}
+        </p>
+      </div>
 
       <div className="text-xl text-center py-4 px-2">
         <h3>
