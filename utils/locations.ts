@@ -13,6 +13,6 @@ export const LOCATIONS = [
     name: "Jour de match Allianz Riviera",
     description: "Aloura sera présent pour tous les matchs à domicile de la saison de l'OGC Nice.",
     image: { src: LOGO_OGCN, alt: "Logo OGC Nice" },
-    bg: "from-gray-900 to-black",
+    bg: "from-gray-800 to-black",
   },
 ];
