@@ -7,12 +7,12 @@ export const LOCATIONS = [
     name: "Cours Saleya",
     description: "Ouvert du lundi au vendredi de 11h à 14h",
     image: { src: EMPLACEMENT_COURS_SALEYA, alt: "Emplacement cours Saleya" },
-    bg: "from-red-500 to-red-700",
+    bg: "red",
   },
   {
     name: "Jour de match Allianz Riviera",
     description: "Aloura sera présent pour tous les matchs à domicile de la saison de l'OGC Nice.",
     image: { src: LOGO_OGCN, alt: "Logo OGC Nice" },
-    bg: "from-gray-800 to-black",
+    bg: "black",
   },
 ];
