@@ -22,9 +22,14 @@ export function Header() {
   };
 
   return (
-    <header className="z-50 relative text-white">
+    <header className="z-50 relative text-white text-xl">
       <div className="flex items-center justify-between gap-4 w-full bg-gradient-to-br from-red-700 to-red-950 md:justify-center">
-        <Link href={ROUTES.HOME.URL} className="duration-300 hover:scale-105">
+        <Link
+          href={ROUTES.HOME.URL}
+          className={`z-50 ${
+            isMenuOpen ? "opacity-0" : "opacity-100"
+          } duration-300 hover:scale-105 md:opacity-100`}
+        >
           <Image src={LOGO} alt="Logo Aloura" width={100} height={100} />
         </Link>
 

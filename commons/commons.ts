@@ -12,7 +12,7 @@ export const ROUTES = {
     URL: "/qui-sommes-nous",
   },
   MENU: {
-    LABEL: "Menu",
+    LABEL: "Notre menu",
     URL: "/notre-menu",
   },
   LOCATION: {
